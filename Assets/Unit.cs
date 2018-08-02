@@ -18,7 +18,8 @@ public class Unit : MonoBehaviour {
 			RaycastHit thisHit;
 			if(selected) {
 				if (Physics.Raycast (tryRay, out thisHit, 5000)) {
-					this.GetComponent<Transform>().position = thisHit.point;
+					float terrainHeightAtHit = Terrain.activeTerrain.SampleHeight(thisHit.point);
+					this.GetComponent<Transform>().position = new Vector3(thisHit.point.x, terrainHeightAtHit, thisHit.point.z);
 				}
 				this.selected = false;
 			}
