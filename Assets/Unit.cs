@@ -19,7 +19,9 @@ public class Unit : MonoBehaviour {
 			if(selected) {
 				if (Physics.Raycast (tryRay, out thisHit, 5000)) {
 					float terrainHeightAtHit = Terrain.activeTerrain.SampleHeight(thisHit.point);
-					this.GetComponent<Transform>().position = new Vector3(thisHit.point.x, terrainHeightAtHit, thisHit.point.z);
+					float gridSnapX = (int)thisHit.point.x % 2 == 0 ? Mathf.Ceil(thisHit.point.x) : Mathf.Floor(thisHit.point.x);
+					float gridSnapZ = (int)thisHit.point.z % 2 == 0 ? Mathf.Ceil(thisHit.point.z) : Mathf.Floor(thisHit.point.z);
+					this.GetComponent<Transform>().position = new Vector3(gridSnapX, terrainHeightAtHit, gridSnapZ);
 				}
 				this.selected = false;
 			}
