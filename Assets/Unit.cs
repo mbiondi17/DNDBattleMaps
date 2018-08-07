@@ -14,8 +14,7 @@ public class Unit : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(controllingPlayer != null) {
-			Debug.Log("Had contorller");
+		if(controllingPlayer != null && !controllingPlayer.IsAssigningUnit()) {
 			if(Input.GetMouseButtonDown(0)) {
 				Ray tryRay = Camera.main.ScreenPointToRay (Input.mousePosition);
 				RaycastHit thisHit;
