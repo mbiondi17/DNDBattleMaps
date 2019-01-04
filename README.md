@@ -4,7 +4,9 @@ A Unity Application that helps players and DMs visualize the battlefield. This i
 - Turn order enforcement with override available for the DM
 - Multi-level mapping so DMs can easily navigate between world, continent, region, city, and battle scales
 - DM notebook for organizing campaign notes, tying notes to locations.
-- DM and Player Roles for Networking, sharing maps from DM to players
+- Room creation & Joining
+- DM and Player Roles for Networking
+- Sharing maps from DM to players
 - Combat order tracker
 - Character Cheat Sheets for DM 
 - Enemy trackers for DM
@@ -22,6 +24,7 @@ A Unity Application that helps players and DMs visualize the battlefield. This i
 # In Progress
 - Networking so players can join a game and move their characters
 - Map Creation
+- Menu level for map selection (will be moved from main menu once Room Creation is complete)
 
 # Completed
 - DM can move units around the battlefield
