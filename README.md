@@ -30,7 +30,7 @@ A Unity Application that helps players and DMs visualize the battlefield. This i
 
 # CONTRIBUTING
 
-To contribute, clone the repository and begin a new branch. Make your changes, and submit a pull request. I will review the request within a couple of days and approve it or give feedback. 
+To contribute, clone the repository and begin a new branch. Make your changes, and submit a pull request. I will review the request within a couple of days and approve it or give feedback. Currently, the Roadmap is the only guide for features to implement, but soon there will be more comprehensive issue tracking.
 
 # USING THE APPLICATION
 At present, using the application requires the Unity Editor, as the executable would just open to whatever scene happened to be first in the build order. Once you have the Editor, you can download the repository and open the folder as a project in Unity. Make a new scene, design your map, drop in your character models (some included already), and start the game by hitting the "Play" button at the top of the screen. You will need to press the "Start Hosting" button that shows up in the game window, and then you will be able to move characters around the map. 
