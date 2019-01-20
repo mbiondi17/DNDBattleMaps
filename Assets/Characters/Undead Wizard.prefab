@@ -460,7 +460,7 @@ GameObject:
   - component: {fileID: 114101979907960576}
   - component: {fileID: 114316677743728686}
   m_Layer: 0
-  m_Name: wizard_macanim DEMO
+  m_Name: Undead Wizard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

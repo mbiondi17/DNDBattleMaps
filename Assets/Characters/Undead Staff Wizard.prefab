@@ -977,7 +977,7 @@ GameObject:
   - component: {fileID: 4000011578242470}
   - component: {fileID: 95000012058624550}
   m_Layer: 0
-  m_Name: wizard_weapon_macanim DEMO
+  m_Name: Undead Staff Wizard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
