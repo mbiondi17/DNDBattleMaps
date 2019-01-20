@@ -2,7 +2,6 @@ A Unity Application that helps players and DMs visualize the battlefield. This i
 
 # Roadmap
 - Turn order enforcement with override available for the DM
-- Multi-level mapping so DMs can easily navigate between world, continent, region, city, and battle scales
 - Map exporter (use style transfer ML to get parchment-style map? Or just map terrain regions to icons)
 - DM notebook for organizing campaign notes, tying notes to locations.
 - Room creation & Joining
@@ -25,6 +24,7 @@ A Unity Application that helps players and DMs visualize the battlefield. This i
 # In Progress
 - Networking so players can join a game and move their characters
 - Map Creation
+- Multi-level mapping so DMs can easily navigate between world, continent, region, city, and battle scales
 
 # Completed
 - DM can move units around the battlefield
