@@ -25,12 +25,12 @@ A Unity Application that helps players and DMs visualize the battlefield. This i
 # In Progress
 - Networking so players can join a game and move their characters
 - Map Creation
-- Menu level for map selection (will be moved from main menu once Room Creation is complete)
 
 # Completed
 - DM can move units around the battlefield
 - Decent opening set of assets for mapmaking
 - Multiple basic maps
+- Menu level for map selection (will be moved from main menu once Room Creation is complete)
 
 # Contributing
 To contribute, fork and clone the repository, and begin a new branch. Make your changes, and submit a pull request. I will review the request within a couple of days and approve it or give feedback. Currently, the Roadmap is the only guide for features to implement, but soon there will be more comprehensive issue tracking.
