@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Temple.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
+    path: Assets/Scenes/Eluvin.unity
+    guid: fc27a34cba574d444bc401518c091ebc
+  - enabled: 1
     path: Assets/Scenes/Cave.unity
     guid: e623d17af44958c4395f282dd91e0b21
   - enabled: 1
@@ -41,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Temple of Torm L1.unity
     guid: 2755ca2153cfbf04dbf72ac1d96e1009
+  - enabled: 1
+    path: Assets/Scenes/Temple Of Torm L2.unity
+    guid: 93bbece457ede9145bb68055235224f5
   m_configObjects: {}
