@@ -10,7 +10,7 @@ A Unity Application that helps players and DMs visualize the battlefield. This i
 - Combat order tracker
 - Character Cheat Sheets for DM 
 - Enemy trackers for DM
-- Transparency, Removal, and Replacement for objects on map
+- Transparency, and Replacement for objects on map
 - Possibly make building interiors another scale of mapping
 - Music & Ambience manager
 - Map Import from programs like PyMapper / Tiled (Stretch: rudimentary 3D extrusion of 2D maps)
@@ -31,6 +31,7 @@ A Unity Application that helps players and DMs visualize the battlefield. This i
 - Decent opening set of assets for mapmaking
 - Multiple basic maps
 - Menu level for map selection (will be moved from main menu once Room Creation is complete)
+- Removal for simple objects ("V-Click")
 
 # Contributing
 To contribute, fork and clone the repository, and begin a new branch. Make your changes, and submit a pull request. I will review the request within a couple of days and approve it or give feedback. Currently, the Roadmap is the only guide for features to implement, but soon there will be more comprehensive issue tracking.
