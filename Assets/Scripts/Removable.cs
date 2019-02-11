@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Removable : MonoBehaviour
@@ -19,17 +20,18 @@ public class Removable : MonoBehaviour
 			RaycastHit thisHit;
 			if (Physics.Raycast (tryRay, out thisHit, 5000)) {
 				if(thisHit.transform.gameObject == this.gameObject) {
-                    Renderer rend;
+                    List<Renderer> rends = new List<Renderer>();
                     if(this.GetComponent<Renderer>() != null) 
-                            rend = this.GetComponent<Renderer>();
-                    else rend = this.GetComponentInChildren<Renderer>();
+                            rends.Add(this.GetComponent<Renderer>());
+                    if(this.GetComponentsInChildren<Renderer>().Any()) 
+                        rends.AddRange(this.GetComponentsInChildren<Renderer>());
                     
                     if(visible) {
-                        rend.enabled = false;
+                        rends.ForEach(x => x.enabled = false);
                         visible = false;
                     }
                     else {
-                        rend.enabled = true;
+                        rends.ForEach(x => x.enabled = true);
                         visible = true;
                     }
                 }

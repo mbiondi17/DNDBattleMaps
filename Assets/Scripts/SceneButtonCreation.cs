@@ -19,19 +19,18 @@ public class SceneButtonCreation : MonoBehaviour
         var columns = 3;
         var columnWidth = buttonParent.sizeDelta.x / columns;
         var rowHeight = 100;
-        
-        
-
-
+        var rows = 0;
         var activeScenes = new List<String>();
-
-
+        var rowPadding = 50;
 
         for(int i = 0; i < SceneManager.sceneCountInBuildSettings; i++) {
             if(SceneUtility.GetScenePathByBuildIndex(i) != SceneManager.GetActiveScene().path) {
                 activeScenes.Add(SceneUtility.GetScenePathByBuildIndex(i));
             }
         }
+
+        rows = Mathf.CeilToInt(activeScenes.Count / 3.0f);
+        buttonParent.GetComponent<RectTransform>().sizeDelta = new Vector2(buttonParent.GetComponent<RectTransform>().sizeDelta.x, rows*rowHeight);
 
         for(int i = 0; i < activeScenes.Count; i++) {
             //create button for scene!
@@ -46,7 +45,8 @@ public class SceneButtonCreation : MonoBehaviour
 
             var columnNumber = (i) % columns; 
             var buttonX = columnWidth*columnNumber - (columnWidth / 2) - (newButton.GetComponent<RectTransform>().sizeDelta.x * 0.825f);
-            var buttonY = (float)Math.Ceiling((decimal)Math.Max(1, i) / columns) * rowHeight; //Magic number :( size of the scrollview height - row height. 
+            var buttonRow = Mathf.FloorToInt(i / columns);
+            var buttonY = (-1 * buttonRow * rowHeight) - rowPadding + buttonParent.GetComponent<RectTransform>().sizeDelta.y / 2;
 
             newButton.GetComponent<RectTransform>().localPosition = new Vector2(buttonX, buttonY);
 
