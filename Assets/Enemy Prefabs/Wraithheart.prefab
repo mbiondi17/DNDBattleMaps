@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 240070039788623762}
   - component: {fileID: 144623608}
   - component: {fileID: 144623609}
+  - component: {fileID: 1142161721}
   m_Layer: 0
   m_Name: Wraithheart
   m_TagString: Untagged
@@ -59,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ba45a3bf09e149744a374a2acd3daaa4, type: 3}
+  - {fileID: 2100000, guid: b7ce918c50194e646a4579e55b19af86, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -103,5 +104,17 @@ CapsuleCollider:
   m_Enabled: 1
   m_Radius: 0.1
   m_Height: 0.5
-  m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 0.2}
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1142161721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144623607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e3c258c8e5e8dd4b8003101a896d60a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
