@@ -1,4 +1,4 @@
-A Unity Application that helps players and DMs visualize the battlefield. This is intended to be especially useful for remote games. A premium version will eventually be offered, with extra features like VR presence over the "table", Procedural Map / World generation, and other features that require for-pay assets. 
+A Unity Application that helps players and DMs visualize the battlefield. This is intended to be especially useful for remote games. Development on this is mostly on-hold, as I reassess if a bespoke solution is worthwhile while platforms like Talespire exist. 
 
 # Roadmap
 - Turn order enforcement with override available for the DM
